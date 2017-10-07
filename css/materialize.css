@@ -4396,32 +4396,32 @@ nav .input-field label.active i {
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: local(Roboto Thin), url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff");
+  font-family: "Responsive";
+  src: local(Responsive ExtraLight), url("../fonts/responsive/Responsive-ExtraLight.ttf") format("ttf");
   font-weight: 100;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: local(Roboto Light), url("../fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light.woff") format("woff");
+  font-family: "Responsive";
+  src: local(Responsive Light), url("../fonts/responsive/Responsive-Light.ttf") format("ttf");
   font-weight: 300;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: local(Roboto Regular), url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff");
+  font-family: "Responsive";
+  src: local(Responsive Regular), url("../fonts/responsive/Responsive-Regular.ttf") format("ttf");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: local(Roboto Medium), url("../fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/roboto/Roboto-Medium.woff") format("woff");
+  font-family: "Responsive";
+  src: local(Responsive SemiBold), url("../fonts/responsive/Responsive-SemiBold.ttf") format("ttf");
   font-weight: 500;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: local(Roboto Bold), url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff");
+  font-family: "Responsive";
+  src: local(Responsive Bold), url("../fonts/responsive/Responsive-Bold.ttf") format("ttf");
   font-weight: 700;
 }
 
@@ -4431,7 +4431,7 @@ a {
 
 html {
   line-height: 1.5;
-  font-family: "Roboto", sans-serif;
+  font-family: "Responsive", sans-serif;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87);
 }
