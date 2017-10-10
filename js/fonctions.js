@@ -52,7 +52,7 @@ $(document).ready(function() {
            }
        });
 
-       $('.masque').on('mouseover', function(evt){
+       $('.couleur_masque').change(function(){
            if($('#couleur_cadre').val() == 1){
                if($('#couleur_verre').val() == 1){
                   $('.img_ryft').attr('src', 'images/masque/ryft_11.jpg');
