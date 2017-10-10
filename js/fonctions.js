@@ -52,6 +52,66 @@ $(document).ready(function() {
            }
        });
 
+       $('.masque').on('mouseover', function(evt){
+           if($('#couleur_cadre').val() == 1){
+               if($('#couleur_verre').val() == 1){
+                  $('.img_ryft').attr('src', 'images/masque/ryft_11.jpg');
+               }
+               else if ($('#couleur_verre').val() == 2) {
+                   $('.img_ryft').attr('src', 'images/masque/ryft_12.jpg');
+               }
+               else if ($('#couleur_verre').val() == 3) {
+                   $('.img_ryft').attr('src', 'images/masque/ryft_13.jpg');
+               }
+           }
+           else if($('#couleur_cadre').val() == 2){
+               if($('#couleur_verre').val() == 1){
+                  $('.img_ryft').attr('src', 'images/masque/ryft_21.jpg');
+               }
+               else if ($('#couleur_verre').val() == 2) {
+                   $('.img_ryft').attr('src', 'images/masque/ryft_22.jpg');
+               }
+               else if ($('#couleur_verre').val() == 3) {
+                   $('.img_ryft').attr('src', 'images/masque/ryft_23.jpg');
+               }
+           }
+           else if($('#couleur_cadre').val() == 3){
+               if($('#couleur_verre').val() == 1){
+                  $('.img_ryft').attr('src', 'images/masque/ryft_31.jpg');
+               }
+               else if ($('#couleur_verre').val() == 2) {
+                   $('.img_ryft').attr('src', 'images/masque/ryft_32.jpg');
+               }
+               else if ($('#couleur_verre').val() == 3) {
+                   $('.img_ryft').attr('src', 'images/masque/ryft_33.jpg');
+               }
+           }
+           else if($('#couleur_cadre').val() == 4){
+               if($('#couleur_verre').val() == 1){
+                  $('.img_ryft').attr('src', 'images/masque/ryft_41.jpg');
+               }
+               else if ($('#couleur_verre').val() == 2) {
+                   $('.img_ryft').attr('src', 'images/masque/ryft_42.jpg');
+               }
+               else if ($('#couleur_verre').val() == 3) {
+                   $('.img_ryft').attr('src', 'images/masque/ryft_43.jpg');
+               }
+           }
+           else if($('#couleur_cadre').val() == 5){
+               if($('#couleur_verre').val() == 1){
+                  $('.img_ryft').attr('src', 'images/masque/ryft_51.jpg');
+               }
+               else if ($('#couleur_verre').val() == 2) {
+                   $('.img_ryft').attr('src', 'images/masque/ryft_52.jpg');
+               }
+               else if ($('#couleur_verre').val() == 3) {
+                   $('.img_ryft').attr('src', 'images/masque/ryft_53.jpg');
+               }
+           }
+           else{
+               $('.img_ryft').attr('src', 'images/masque/ryft_11.jpg');
+           }
+       });
 
     });
 	 });
