@@ -90,7 +90,7 @@
 		</div>
 		<div class="row">
 			<div class="input-field col s12 m4 offset-m4">
-				<select>
+				<select id="pack">
 				  <option value="" disabled selected>Je choisis mon pack :</option>
 				  <option value="1">PG : 295€</option>
 				  <option value="2">Archi (promo 213 et antérieures) : 345€</option>
@@ -119,7 +119,7 @@
 		<div class="row">
 			<h5>Le car c'est l'occasion de chouiller avec tes cop's !</h5>
 			<div class="input-field col s12 m4 offset-m4">
-				<select>
+				<select id="transport">
 					<option value="" disabled selected>Je souhaite venir en car de :</option>
 					<option value="1">Birse : 85€</option>
 					<option value="2">Boquette : 90€</option>
@@ -153,7 +153,7 @@
 			<h5>Choisis le type de résidence que tu préfères :</h5>
 			<h6>Remarque : La repart's sera faite plus tard</h6>
 			<div class="input-field col s12 m4 offset-m4">
-				<select>
+				<select id="resids">
 					<option value="" disabled selected>Je préfère loger dans la resid's :</option>
 					<option value="1">Anim's +</option>
 					<option value="2">Anim's</option>
@@ -180,7 +180,7 @@
 		<div class="row">
 			<h6 style='color: #f99c43;'>Pack food sans porc : </h6>
 			<div class="switch">
-				<label>Non<input type="checkbox"><span class="lever"></span>Oui</label>
+				<label>Non<input type="checkbox" id="food"><span class="lever"></span>Oui</label>
 			</div>
 		</div>
 		<div class="row">
@@ -190,27 +190,27 @@
 				<br>
 				<h6>Le pack saucisson : 5 saucissons pour 10€</h6>
 				<div class="switch">
-					<label>Non<input type="checkbox"><span class="lever"></span>Oui</label>
+					<label>Non<input type="checkbox" id="saucisson"><span class="lever"></span>Oui</label>
 				</div>
 				<br>
 				<h6>Le pack fromage : 5 fromages pour 10€</h6>
 				<div class="switch">
-					<label>Non<input type="checkbox"><span class="lever"></span>Oui</label>
+					<label>Non<input type="checkbox" id="fromage"><span class="lever"></span>Oui</label>
 				</div>
 				<br>
 				<h6>Le pack baguette : 1 baguette tous les matins pour 3€50</h6>
 				<div class="switch">
-					<label>Non<input type="checkbox"><span class="lever"></span>Oui</label>
+					<label>Non<input type="checkbox" id="baguette"><span class="lever"></span>Oui</label>
 				</div>
 				<br>
 				<h6>Le pack croissant : 1 croissant tous les matins pour 3€30</h6>
 				<div class="switch">
-					<label>Non<input type="checkbox"><span class="lever"></span>Oui</label>
+					<label>Non<input type="checkbox" id="croissant"><span class="lever"></span>Oui</label>
 				</div>
 				<br>
 				<h6>Le pack chocolatin's : 1 chocolatine tous les matins pour 3€60</h6>
 				<div class="switch">
-					<label>Non<input type="checkbox"><span class="lever"></span>Oui</label>
+					<label>Non<input type="checkbox" id="choc"><span class="lever"></span>Oui</label>
 				</div>
 
 				<br>
@@ -276,7 +276,7 @@
               </table>
 
             <div class="input-field col s12 m4 offset-m4">
-                <select>
+                <select  id="skis">
                     <option value="" disabled selected>Je veux :</option>
                     <optgroup label="Gamme Ecoski">
                         <option value="1">Skis + Chaussures Ecoski</option>
@@ -284,19 +284,19 @@
                         <option value="3">Chaussures seules Ecoski</option>
                     </optgroup>
                     <optgroup label="Gamme Découverte">
-                        <option value="1">Skis + Chaussures Découverte</option>
-                        <option value="2">Skis seuls Découverte</option>
-                        <option value="3">Chaussures seules Découverte</option>
+                        <option value="4">Skis + Chaussures Découverte</option>
+                        <option value="5">Skis seuls Découverte</option>
+                        <option value="6">Chaussures seules Découverte</option>
                     </optgroup>
                     <optgroup label="Gamme Sensation">
-                        <option value="1">Skis + Chaussures Sensation</option>
-                        <option value="2">Skis seuls Sensation</option>
-                        <option value="3">Chaussures seules Sensation</option>
+                        <option value="7">Skis + Chaussures Sensation</option>
+                        <option value="8">Skis seuls Sensation</option>
+                        <option value="9">Chaussures seules Sensation</option>
                     </optgroup>
                     <optgroup label="Gamme Excellence">
-                        <option value="1">Skis + Chaussures Excellence</option>
-                        <option value="2">Skis seuls Excellence</option>
-                        <option value="3">Chaussures seules Excellence</option>
+                        <option value="10">Skis + Chaussures Excellence</option>
+                        <option value="11">Skis seuls Excellence</option>
+                        <option value="12">Chaussures seules Excellence</option>
                     </optgroup>
                 </select>
             </div>
@@ -325,8 +325,8 @@
     				<li>
     				<div class="row">
     					<div class="input-field col s10 m5">
-    					  <input id="taille" type="text" class="validate">
-    					  <label for="taille">Taille (cm)</label>
+    					  <input id="taillecm" type="text" class="validate">
+    					  <label for="taillecm">Taille (cm)</label>
     					</div>
     					<div class="input-field col s10 m5">
     					  <input id="pointure" type="text" class="validate">
@@ -336,7 +336,7 @@
     				</li>
     				<li>
                         <div class="input-field col s12 m4">
-                            <select>
+                            <select id="taille">
                                 <option value="" disabled selected>Taille (S/M/L) :</option>
                                 <option value="1">S</option>
                                 <option value="2">M</option>
@@ -346,7 +346,7 @@
     				</li>
     				<li>
                         <div class="input-field col s12 m4">
-                            <select>
+                            <select id="tete">
                                 <option value="" disabled selected>Tour de tête :</option>
                                 <option value="1">56-59 cm</option>
                                 <option value="2">59-62 cm</option>
@@ -355,7 +355,7 @@
     				</li>
     				<li>
                         <div class="input-field col s12 m4">
-                            <select>
+                            <select id="niveau">
                                 <option value="" disabled selected>Niveau de ski :</option>
                                 <option value="1">Débutant</option>
                                 <option value="2">Intermédiaire</option>
@@ -387,9 +387,9 @@
 
         <div class="row">
             <h5>Choisis les anim's auxquelles tu veux participer :</h5>
-            Classe les anim's en fonction de ta préférence (0 à 7). 0 ou rien = ça ne m'interesse pas <br>
+            Classe les anim's en fonction de ta préférence (0 à 7). 0 ou rien = ça ne m'interesse pas. 1 : mon choix numéro 1, 7 : celui que je veux en dernier  <br>
                 <div class="input-field col s12 m8 offset-m2">
-                    <select>
+                    <select  id="rcc">
                         <option value="" disabled selected  style="color: #f99c43;">RCC (10€) :</option>
                         <option value="1">Oui</option>
                         <option value="2">Non</option>
@@ -397,7 +397,7 @@
                 </div>
 
                 <div class="input-field col s6 m3">
-                        <select>
+                        <select id="freeride">
                             <option value="" disabled selected>Freeride (gratuit) :</option>
                             <option value="1">0</option>
                             <option value="2">1</option>
@@ -411,7 +411,7 @@
                     </div>
 
                     <div class="input-field col s6 m3">
-                        <select>
+                        <select id="raquette">
                             <option value="" disabled selected>Raquette (gratuit) :</option>
                             <option value="1">0</option>
                             <option value="2">1</option>
@@ -698,18 +698,113 @@
 					<tbody>
 					  <tr>
 						<td>Pack de base</td>
-						<td>PG</td>
+						<td id="res_pack"></td>
 						<td>290€</td>
 					  </tr>
 					  <tr>
 						<td>Transport</td>
-						<td>Chalon's</td>
+						<td id="res_transport"></td>
+						<td>90€</td>
+					  </tr>
+                      <tr>
+						<td>La Resid's</td>
+						<td id="res_resids"></td>
+						<td>90€</td>
+					  </tr>
+                      <tr>
+						<td>Pack food sans porc</td>
+						<td id="res_food">Non</td>
+						<td>90€</td>
+					  </tr>
+                      <tr>
+						<td>Pack Saucisson</td>
+						<td id="res_saucisson">Non</td>
+						<td>90€</td>
+					  </tr>
+                      <tr>
+						<td>Pack Fromage</td>
+						<td id="res_fromage">Non</td>
+						<td>90€</td>
+					  </tr>
+                      <tr>
+						<td>Pack Baguette</td>
+						<td id="res_baguette">Non</td>
+						<td>90€</td>
+					  </tr>
+                      <tr>
+						<td>Pack Croissant</td>
+						<td id="res_croissant">Non</td>
 						<td>90€</td>
 					  </tr>
 					  <tr>
 						<td>Option chocolatine</td>
-						<td>Oui</td>
+						<td id="res_choc">Non</td>
 						<td>3,00€</td>
+					  </tr>
+                      <tr>
+						<td>Les Skis</td>
+						<td id="res_skis"></td>
+						<td></td>
+					  </tr>
+                      <tr>
+						<td>Tes Mensurations - taille (cm)</td>
+						<td id="res_taillecm"></td>
+						<td></td>
+					  </tr>
+                      <tr>
+						<td>Tes Mensurations - pointure</td>
+						<td id="res_pointure"></td>
+						<td></td>
+					  </tr>
+                      <tr>
+						<td>Tes Mensurations - taille</td>
+						<td id="res_taille"></td>
+						<td></td>
+					  </tr>
+                      <tr>
+						<td>Tes Mensurations - tour de tête</td>
+						<td id="res_tete"></td>
+						<td></td>
+					  </tr>
+                      <tr>
+						<td>Ton niveau de ski</td>
+						<td id="res_niveau"></td>
+						<td></td>
+					  </tr>
+                      <tr>
+						<td>Anim's - RCC</td>
+						<td id="res_rcc"></td>
+						<td>10€</td>
+					  </tr>
+                      <tr>
+						<td>Anim's - Freeride</td>
+						<td id="res_freeride"></td>
+						<td>3€</td>
+					  </tr>
+                      <tr>
+						<td>Anim's - Raquette</td>
+						<td id="res_raquette"></td>
+						<td>3€</td>
+					  </tr>
+                      <tr>
+						<td></td>
+						<td></td>
+						<td></td>
+					  </tr>
+                      <tr>
+						<td>Masque</td>
+						<td id="res_masque"></td>
+						<td>3€</td>
+					  </tr>
+                      <tr>
+						<td>Couleur cadre</td>
+						<td id="res_couleur_cadre"></td>
+						<td>3€</td>
+					  </tr>
+                      <tr>
+						<td>Couleur verre</td>
+						<td id="res_couleur_verre"></td>
+						<td>3€</td>
 					  </tr>
 					  <tr>
 						<td><b>Total</b></td>

@@ -113,5 +113,27 @@ $(document).ready(function() {
            }
        });
 
+       $('select').change(function(){
+           id = $(this).attr('id');
+
+           $('#res_' + id).text($('#' + id + ' option[value='+ $(this).val() + ']').text());
+       });
+
+       $('input[type=text]').change(function(){
+           id = $(this).attr('id');
+
+           $('#res_' + id).text($(this).val());
+       });
+
+       $('input[type=checkbox]').change(function(){
+           id = $(this).attr('id');
+           if($(this).is(':checked')){
+               $('#res_' + id).text('Oui');
+           }
+           else{
+                $('#res_' + id).text('Non');
+           }
+
+       });
     });
 	 });
